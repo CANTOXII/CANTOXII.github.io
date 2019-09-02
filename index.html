@@ -1,33 +1,17 @@
 <<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
 
+<style>
 
-<body>
-   <video id="myVideo" autoplay loop poster="ENTER.png">
-     <!-- Video is embedded in the WEBM format -->
-     <source src="ENTER1.mp4" type="video/mp4">
-   </video>
- </body>
-
-<div>
-
- <style type=”text/css”>
-
-video#myVideo {
-  position: absolute; // Play the video in full screen mode
-    top: 0px;
-    left: 0px;
-    min-width: 100%;
-    min-height: 100%;
-  z-index: -1; // Put the video behind all other elements
-}
-
-@media only screen and (max-width: 768px) {
-  video {
-    display:none;
+  body { background-color: black;
   }
-  body{
-    background-image:url(ENTER.png”);
-  }
-}
+
+
 </style>
-</div>
+
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
