@@ -1,53 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
+<<!DOCTYPE html>
 
 
-
-
-</style>
-</head>
 <body>
+   <video id="myVideo" autoplay loop poster="ENTER.png">
+     <!-- Video is embedded in the WEBM format -->
+     <source src="ENTER1.mp4" type="video/mp4">
+   </video>
+ </body>
 
-<video autoplay loop id="myVideo">
-  <source src="ENTER1.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<div>
 
+ <style type=”text/css”>
 
-<script>
-var video = document.getElementById("myVideo");
+video#myVideo {
+  position: absolute; // Play the video in full screen mode
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+  z-index: -1; // Put the video behind all other elements
+}
 
-
-</script>
-
-</body>
-</html>
+@media only screen and (max-width: 768px) {
+  video {
+    display:none;
+  }
+  body{
+    background-image:url(ENTER.png”);
+  }
+}
+</style>
+</div>
