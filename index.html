@@ -1,11 +1,19 @@
-<!doctype HTML>
-  <html>
-  <head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<div>
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
 
- video {
+#myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -13,8 +21,7 @@
   min-height: 100%;
 }
 
-
- content {
+.content {
   position: fixed;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -24,12 +31,23 @@
 }
 
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-<video autoplay loop id="ENTER1">
+
+
+</style>
+</head>
+<body>
+
+<video autoplay loop id="myVideo">
   <source src="ENTER1.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
 </video>
 
-    </div>
+
+<script>
+var video = document.getElementById("myVideo");
+
+
+</script>
+
+</body>
+</html>
